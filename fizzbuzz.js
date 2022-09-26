@@ -10,15 +10,19 @@ function fizzbuzz() {
     
     for(let i=1; i<101;  i++)
     {
+        let fizz = 'fizz'
+        let buzz = 'buzz'
+        let bang = 'bang'
+        
         if (i % 15 == 0){
-            console.log('fizzbuzz')
-        }
-        else if (i % 3 == 0) {
-            console.log('fizz') 
-        } else if(i % 5 == 0) {
-            console.log('buzz') 
-        }
-        else {
+            console.log(fizz + buzz)
+        }if (i % 3 == 0) {
+             console.log(fizz) 
+        }if(i % 5 == 0) {
+            console.log(buzz) 
+        }if(i % 7 == 0) {
+            console.log(bang) 
+        }else {
             console.log(i)
         }
 
